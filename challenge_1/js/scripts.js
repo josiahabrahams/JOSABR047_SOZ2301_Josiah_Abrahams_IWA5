@@ -20,7 +20,7 @@ if (location == 'RSA'){
  }
 
 let shoes = 300 * 1
-let toys = 400 * 5
+let toys = 100 * 5
 let shirts = 150 * NONE_SELECTED
 let batteries = 35 * 2
 let pens = 5 * NONE_SELECTED 
