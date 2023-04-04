@@ -7,12 +7,12 @@ let customers = '1'
 let location = 'RSA'
 let currency = "R"
 
-if (location == 'RSA'){
+if (location === 'RSA'){
   shipping = 400 
   currency = 'R'
 
 
-}else if (location == 'NAM'){
+}else if (location === 'NAM'){
                      shipping = 600 
                      currency = '$'
  }else{ 
