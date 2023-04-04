@@ -8,7 +8,7 @@ let location = 'RSA'
 let currency = "R"
 
 if (location == 'RSA'){
-  shipping += 400 
+  shipping = 400 
   currency = 'R'
 
 
@@ -20,19 +20,25 @@ if (location == 'RSA'){
  }
 
 let shoes = 300 * 1
-let toys = 100 * 5
+let toys = 400 * 5
 let shirts = 150 * NONE_SELECTED
 let batteries = 35 * 2
 let pens = 5 * NONE_SELECTED 
 
 
-if (shoes + toys + batteries + pens + shirts >= 1000 && location === 'NAM'  || location === 'RSA' ) {
+if (shoes + toys + batteries + pens + shirts >= 1000 && location === 'NAM'   ) {
 	
 		    shipping = 0 
 	
+}else if (shoes + toys + batteries + pens + shirts >= 1000 &&  location === 'RSA' ) {
+	
+  shipping = 0 
+
 }
 
-if (shipping === 0 && customers === 1 ) { console.log(WARNING) }
+
+if (shipping === 0 && customers > 1) { console.log(FREE_WARNING) }
+
 
 if (location === 'NK' ){
                       console.log(BANNED_WARNING)}else{
